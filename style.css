@@ -134,7 +134,7 @@ form > input {
     background-color: #f9f9f9;
 }
 
-.circular-logo {
+.circular-logo, .soc-img {
     width: 45px;
     height: 35px;
     border-radius: 50%;
@@ -214,7 +214,7 @@ main {
 .main-1 {
     grid-area: main-1;
     display: grid;
-    grid-template-rows: 0.1fr 0.9fr;
+    grid-template-rows: 0.1fr 0.8fr;
     grid-template-areas: 
     "main-1-title"
     "main-1-items";
@@ -262,14 +262,71 @@ main {
 .main-box-2 {
     border: 1px solid black;
     border-radius: 10px;
-    background-color: gold;
-   
+    background-color: white;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "box-b-1"
+    "box-b-2"
+    "box-b-3"
+    "box-b-4";
 }
+
+.box-b-1 {
+    grid-area: box-b-1;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "soc-img soc-data";
+    padding-left: 10px;
+}
+
+
+
+.box-b-2 {
+    grid-area: box-b-2;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-areas: 
+    "soc-img soc-data";
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.box-b-3 {
+    grid-area: box-b-3;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-areas: 
+    "soc-img soc-data";
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.box-b-4 {
+    grid-area: box-b-4;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-areas: 
+    "soc-img soc-data";
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
 .cont-1 {
     grid-area: cont-1;
+    border-bottom: 2px solid black;
 }
 .cont-2 {
     grid-area: cont-2;
+    border-bottom: 2px solid black;
 }
 .cont-3 {
     grid-area: cont-3;
@@ -282,6 +339,7 @@ main {
     grid-template-areas: 
     "main-2-title"
     "main-2-items";
+    padding: 10px;
 }
 
 .main-2-title {
@@ -311,6 +369,7 @@ main {
     "cont-1"
     "cont-2"
     "cont-3";
+    padding: 20px;
 }
 .box-b {
     grid-area: box-b;
@@ -320,6 +379,7 @@ main {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    margin-top: 0px;
 }
 .p-title {
     padding: 20px 10px;
@@ -338,4 +398,28 @@ main {
 .lorem-title {
     font-size: 1rem;
     font-weight: 700;
+}
+.cont-title {
+    font-weight: 700;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+.cont-text {
+    font-size: 0.7rem;
+    color: #747474;
+}
+
+.soc-handle {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.soc-mantra {
+    font-size: 0.8rem;
+}
+.soc-image {
+    grid-area: soc-image;
+}
+.soc-data {
+    grid-area: soc-data;
 }
